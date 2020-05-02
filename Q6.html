@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Regular expression</title>
+    <style type="text/css">
+        body
+        {
+            background-color:aqua;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function validate() {
+            var username = document.getElementById("uname").value;
+            var regx = /GOVIND/i;
+            if (regx.test(username)) {
+                alert("valaid username");
+            } else {
+                alert("invalaid username");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="message.html">
+        <input id="uname" placeholder="username" type="text" />
+        <button onclick="validate()" type="button">submit</button>
+    </form>
+</body>
+
+</html>

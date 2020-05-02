@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color:aqua;
+			color:red;
+			text-align: center;
+			font-size:28px;
+		}
+		h2
+		{
+			color: yellow;
+			font-size: 45px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Output is :</h2>
+	<script type="text/javascript">
+function calc() 
+{
+    var a = 14;
+    var b = 10;
+
+    function add() 
+    {
+        var sum = a + b;
+        return sum;
+    }
+    return add;
+}
+    var sum= calc();
+    document.write(sum());
+
+    </script>
+</body>
+</html>
